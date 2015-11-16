@@ -1,5 +1,10 @@
 define(['jquery'], function ($) {
 
+    /**
+     * Initialize module.
+     * @param {element} element - The node (element) to load this module on.
+     * @param {object} options - Options for this module.
+     */
     var exports = function(element, options) {
         this._element = element;
         this._options = options || {};
