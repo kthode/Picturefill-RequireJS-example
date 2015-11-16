@@ -9,9 +9,15 @@ requirejs.config({
         app: '../app',
         jquery: 'jquery-1.11.3.min',
         picturefill: 'picturefill'
+    },
+    map:{
+        '*': {
+            conditioner:'conditioner'
+        }
     }
 });
 
-// Start loading the main app file. Put all of
-// your application logic in there.
-requirejs(['app/main']);
+// all modules should be loaded by the conditioner
+require(['conditioner'],function(conditioner) {
+    conditioner.init();
+});
