@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Picturefill RequireJS</h1>
+        <h2><span>Viewport width: </span><span id='viewport'></span></h2>
+        <picture>
+            <source srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=1700px&w=1700&h=700" media="(min-width: 1700px)">
+            <source srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=1000px&w=1000&h=500" media="(min-width: 1000px)">
+            <source srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=600px)&w=600&h=300" media="(min-width: 600px)">
+            <img srcset="https://placeholdit.imgix.net/~text?txtsize=33&txt=default&w=300&h=150" alt="…">
+        </picture>
+        <script data-main="app" src="lib/require.js"></script>
+    </body>
+</html>
